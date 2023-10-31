@@ -13,6 +13,7 @@ public class DriverManager {
     public DriverManager(){
         System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"/src/test/resources/drivers/chromedriver_v118.exe");
         driver = new ChromeDriver();
+        System.out.println("Driver setup done");
     }
 
     public void close(){
